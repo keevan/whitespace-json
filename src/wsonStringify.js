@@ -11,15 +11,14 @@ const encodeByteAsWhitespace = (byte) => {
 
 const wsonStringify = (jsObject) => {
   const stringToEncode = JSON.stringify(jsObject);
-
   const buffer = Buffer.from(stringToEncode);
 
   let encoded = [];
-  for (const buf of buffer) {
+  buffer.forEach(buf => {
     const [first, second] = encodeByteAsWhitespace(buf);
     encoded.push(first);
     encoded.push(second);
-  }
+  });
   encoded = encoded.join("");
 
   return encoded;
