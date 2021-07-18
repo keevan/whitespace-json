@@ -1,0 +1,20 @@
+{
+  "name": "wson",
+  "version": "1.0.0",
+  "description": "WhiteSpace JSON - JSON but every character is whitespace. Config files now readable by nobody!! 👍🏻",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/patrickbrett/wson.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/patrickbrett/wson/issues"
+  },
+  "homepage": "https://github.com/patrickbrett/wson#readme"
+}
