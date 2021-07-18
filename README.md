@@ -2,6 +2,8 @@
 
 Whitespace JSON - JSON but every character is whitespace. Config files now readable by nobody!! 👍🏻
 
+[![npm version](https://badge.fury.io/js/whitespace-json.svg)](https://npmjs.com/package/whitespace-json)
+
 ## Wait, what?
 
 Ever looked at a config file, you know, one like this:
