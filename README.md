@@ -1,6 +1,6 @@
-# WSON
+# Whitespace JSON
 
-WhiteSpace JSON - JSON but every character is whitespace. Config files now readable by nobody!! 👍🏻
+Whitespace JSON - JSON but every character is whitespace. Config files now readable by nobody!! 👍🏻
 
 ## Wait, what?
 
@@ -35,13 +35,13 @@ And thought to yourself, wow, that's great and all but I wish this config file l
 
 Yeah? Neither have I!
 
-Which is why I made WSON - the only (as far as I can tell, nobody else would bother to make this) way to encode your JSON config files so that they *only use whitespace characters*.
+Which is why I made Whitespace JSON - the only (as far as I can tell, nobody else would bother to make this) way to encode your JSON config files so that they *only use whitespace characters*.
 
 The days of pesky, readable JSON files are no more. The possibilities are endless:
 
 * Store your database passwords in a format nobody will bother to read
 * Impress your friends with your cool, mysterious configuration files
-* Even build your own web server using WSON documents for API calls, and delighting your users!
+* Even build your own web server using WSON documents for API calls, and delight your users!
 
 ## Wow, sign me up! How do I use this thing?
 
@@ -55,6 +55,10 @@ Then import it like this:
 
 ```
 const { parse, stringify } = require('whitespace-json');
+
+const thisIsWhitespace = stringify("Don't say I didn't warn you");
+
+const backToNormal = parse(thisIsWhitespace);
 ```
 
 Godspeed my friend.
