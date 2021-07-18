@@ -1,6 +1,6 @@
 {
   "name": "whitespace-json",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "WhiteSpace JSON - JSON but every character is whitespace. Config files now readable by nobody!! 👍🏻",
   "main": "index.js",
   "scripts": {
