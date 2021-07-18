@@ -10,7 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/patrickbrett/whitespace-json.git"
   },
-  "keywords": [],
+  "keywords": ["whitespace", "json", "parse", "stringify", "wson", "encode", "config", "unreadable"],
   "author": "",
   "license": "ISC",
   "bugs": {
