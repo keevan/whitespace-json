@@ -63,4 +63,23 @@ const thisIsWhitespace = stringify("Don't say I didn't warn you");
 const backToNormal = parse(thisIsWhitespace);
 ```
 
+Oh, did I mention you can also encode your JSON files as emoji? 💯🥳🤪
+
+```
+const { parse, stringify } = require('whitespace-json');
+
+const thisIsWhitespace = stringify("Don't say I didn't warn you", { emoji: true });
+
+const backToNormal = parse(thisIsWhitespace, { emoji: true });
+```
+
+Looks like this:
+
+```
+🙏😘🥺🥺😍😘😍✨🙏😊🥺🥺❤️💕🥺🥺🙏😍😍😭😍👍🙏✨😍✨🥺🥺🥺👍🥺🥺😍😭😍🚗😍
+🙏🤣😍🥰😍✨🙏🥺🥺🥺❤️💕🥺🥺😍😭😍🚗😍
+🙏🤣😍🥰😍✨🙏🥺🥺😂🙏😍😍😭😍👍🙏✨😍✨🥺🥺🥺👍🥺🥺😍😭🙏🥺🙏🥺😍😭🙏😊🥺🥺❤️💕✨😘🥺🥺😍🥰😍✨🙏🥺😍✨🥺🙏🙏❤️🥺🥺🥺👍🥺🥺😍
+😍🚗😍✨🥺🥺✨🍑🙏🍑
+```
+
 Godspeed my friend.

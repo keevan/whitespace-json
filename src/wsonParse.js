@@ -1,17 +1,22 @@
-const { lookupMap } = require("./constants");
+const GraphemeSplitter = require('grapheme-splitter');
+const splitter = new GraphemeSplitter();
 
-const decodeWhitespace = (first, second) => {
-  return lookupMap[first] * 16 + lookupMap[second];
+const { lookupMap, emojiLookupMap } = require("./constants");
+
+const decode = (emoji) => (first, second) => {
+  const map = emoji ? emojiLookupMap : lookupMap;
+  return map[first] * 16 + map[second];
 };
 
-const wsonParse = (wsonString) => {
+const wsonParse = (wsonString, options = { emoji: false }) => {
   const encoded = wsonString;
+  const graphemes = splitter.splitGraphemes(encoded);
 
   const decoded = [];
-  for (let i = 0; i < encoded.length; i += 2) {
-    const first = encoded[i];
-    const second = encoded[i + 1];
-    decoded.push(decodeWhitespace(first, second));
+  for (let i = 0; i < graphemes.length; i += 2) {
+    const first = graphemes[i];
+    const second = graphemes[i + 1];
+    decoded.push(decode(options.emoji)(first, second));
   }
 
   const stringifiedJson = Buffer.from(decoded).toString();

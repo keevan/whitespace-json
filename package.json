@@ -10,11 +10,23 @@
     "type": "git",
     "url": "git+https://github.com/patrickbrett/whitespace-json.git"
   },
-  "keywords": ["whitespace", "json", "parse", "stringify", "wson", "encode", "config", "unreadable"],
+  "keywords": [
+    "whitespace",
+    "json",
+    "parse",
+    "stringify",
+    "wson",
+    "encode",
+    "config",
+    "unreadable"
+  ],
   "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/patrickbrett/whitespace-json/issues"
   },
-  "homepage": "https://github.com/patrickbrett/whitespace-json#readme"
+  "homepage": "https://github.com/patrickbrett/whitespace-json#readme",
+  "dependencies": {
+    "grapheme-splitter": "^1.0.4"
+  }
 }
