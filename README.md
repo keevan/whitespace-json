@@ -41,8 +41,20 @@ The days of pesky, readable JSON files are no more. The possibilities are endles
 
 * Store your database passwords in a format nobody will bother to read
 * Impress your friends with your cool, mysterious configuration files
-* Even build your own web server using WSON documents for API calls!
+* Even build your own web server using WSON documents for API calls, and delighting your users!
 
 ## Wow, sign me up! How do I use this thing?
 
-Install
+That's the best part - you shouldn't!
+
+Alright, if you insist - install via NPM:
+
+`npm i whitespace-json`
+
+Then import it like this:
+
+```
+const { parse, stringify } = require('whitespace-json');
+```
+
+Godspeed my friend.
