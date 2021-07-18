@@ -1,6 +1,6 @@
 {
   "name": "whitespace-json",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "WhiteSpace JSON - JSON but every character is whitespace. Config files now readable by nobody!! 👍🏻",
   "main": "index.js",
   "scripts": {
@@ -18,7 +18,10 @@
     "wson",
     "encode",
     "config",
-    "unreadable"
+    "unreadable",
+    "emoji",
+    "decode",
+    "emojson"
   ],
   "author": "",
   "license": "ISC",
